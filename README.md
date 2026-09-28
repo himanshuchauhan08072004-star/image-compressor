@@ -2,7 +2,7 @@
 
 A small, free image compressor that runs entirely in your browser. No server, no upload, no sign-up.
 
-**Live tool:** [add your Vercel URL here after deploying]
+## LIVE :- https://image-compressor-seven-theta.vercel.app/
 
 ## Why I built this
 
