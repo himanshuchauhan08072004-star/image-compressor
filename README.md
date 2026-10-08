@@ -1,4 +1,4 @@
-# Shrinkit
+## Shrinkit
 
 A small, free image compressor that runs entirely in your browser. No server, no upload, no sign-up.
 
@@ -29,4 +29,5 @@ npx serve .
 
 ## Author
 
-## Himanshu Chauhan — himanshuchauhan08072004@gmail.com
+## Himanshu Chauhan  
+## himanshuchauhan08072004@gmail.com
