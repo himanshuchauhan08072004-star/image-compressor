@@ -1,0 +1,10 @@
+export const MAX_FILE_BYTES = 100 * 1024 * 1024;   // reject absurd uploads before reading
+export const MAX_PIXELS = 100_000_000;             // input safety limit (kept from Phase 0)
+export const MAX_OUTPUT_PIXELS = 40_000_000;       // output canvas cap (mobile-safe-ish)
+export const MAX_SIDE = 16384;
+export const MIN_CROP = 16;                        // smallest crop side, source px
+export const MAX_BATCH_FILES = 50;                  // images in one batch queue
+export const MAX_BATCH_BYTES = 500 * 1024 * 1024;   // combined size of all queued originals
+export const MAX_ZIP_BYTES = 1024 * 1024 * 1024;    // refuse to build a ZIP bigger than this (download singly instead)
+export const BATCH_PARALLEL = 2;                    // never more than this many images in flight
+export const BATCH_PIXEL_BUDGET = 50_000_000;       // sum of source pixels in flight (one oversized image may still run alone)

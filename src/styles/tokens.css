@@ -1,0 +1,86 @@
+/* Shrinkit design tokens. Every colour in the app comes from here; both themes are authored, not inverted.
+   Dark = ink-black base + charcoal surfaces. Light = cool paper + layered white. Accent = electric violet -> cool blue (used on primary actions, progress, one headline word). */
+:root, :root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0B0C10;
+  --bg-raise: #0F1116;
+  --surface: #13151C;
+  --surface-2: #191C25;
+  --surface-3: #20242F;
+  --border: rgba(255,255,255,.09);
+  --border-strong: rgba(255,255,255,.18);
+  --fg: #ECEEF4;
+  --fg-2: #A9AEC0;
+  --fg-3: #8E95AC;
+  --accent: #7C5CFF;
+  --accent-2: #4DA3FF;
+  --accent-text: #B0A0FF;
+  --accent-soft: rgba(124,92,255,.16);
+  --on-accent: #FFFFFF;
+  --btn-a: #6A47F5;
+  --btn-b: #4A62F2;
+  --success: #52D98C; --success-soft: rgba(82,217,140,.14);
+  --warning: #F5C451; --warning-soft: rgba(245,196,81,.14);
+  --danger: #FF8F8F;  --danger-soft: rgba(255,143,143,.14);
+  --focus: #9C86FF;
+  --checker-a: #2A2E3A; --checker-b: #1C1F28;
+  --stage: #08090C;
+  --shadow-1: 0 1px 0 rgba(255,255,255,.04) inset, 0 1px 2px rgba(0,0,0,.5);
+  --shadow-2: 0 12px 32px -12px rgba(0,0,0,.7), 0 0 0 1px rgba(255,255,255,.05);
+  --glass: rgba(11,12,16,.72);
+  --glow: radial-gradient(60% 50% at 50% 0%, rgba(124,92,255,.20), transparent 70%);
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #F5F6FA;
+  --bg-raise: #FFFFFF;
+  --surface: #FFFFFF;
+  --surface-2: #F0F1F7;
+  --surface-3: #E6E8F1;
+  --border: rgba(20,22,40,.10);
+  --border-strong: rgba(20,22,40,.22);
+  --fg: #12141D;
+  --fg-2: #464B60;
+  --fg-3: #5A6077;
+  --accent: #5B3FE0;
+  --accent-2: #2563EB;
+  --accent-text: #4B30C8;
+  --accent-soft: rgba(91,63,224,.10);
+  --on-accent: #FFFFFF;
+  --btn-a: #5B3FE0;
+  --btn-b: #2F5BE0;
+  --success: #146C34; --success-soft: rgba(23,128,61,.10);
+  --warning: #9A5B00; --warning-soft: rgba(154,91,0,.10);
+  --danger: #C0272D;  --danger-soft: rgba(192,39,45,.09);
+  --focus: #5B3FE0;
+  --checker-a: #D9DCE6; --checker-b: #FFFFFF;
+  --stage: #E9EBF3;
+  --shadow-1: 0 1px 2px rgba(20,22,40,.06);
+  --shadow-2: 0 18px 40px -18px rgba(30,30,80,.28), 0 0 0 1px rgba(20,22,40,.05);
+  --glass: rgba(245,246,250,.78);
+  --glow: radial-gradient(60% 50% at 50% 0%, rgba(91,63,224,.12), transparent 70%);
+}
+:root {
+  --font-ui: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Archivo', 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* type scale */
+  --fs-hero: clamp(2.6rem, 6.4vw, 4.6rem);
+  --fs-page: clamp(1.9rem, 4vw, 2.6rem);
+  --fs-section: clamp(1.4rem, 2.6vw, 1.85rem);
+  --fs-tool: 1.0625rem;
+  --fs-body: 1rem;
+  --fs-support: .9375rem;
+  --fs-label: .8125rem;
+  --fs-meta: .75rem;
+
+  /* spacing (4px base) */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 72px; --s-9: 112px;
+
+  /* shape + motion */
+  --r-sm: 8px; --r-md: 12px; --r-lg: 16px; --r-xl: 22px; --r-pill: 999px;
+  --h-control: 40px; --h-control-sm: 32px;
+  --ease: cubic-bezier(.2,.7,.2,1);
+  --t-fast: 120ms; --t-med: 200ms;
+}

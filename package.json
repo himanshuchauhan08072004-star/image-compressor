@@ -1,0 +1,22 @@
+{
+  "name": "shrinkit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test \"tests/*.test.js\"",
+    "test:e2e": "npm run build && python3 tests/e2e/make_fixtures.py && python3 tests/e2e/run.py && python3 tests/e2e/hardening.py && (cd tests/e2e && python3 phase2_convert.py && python3 phase2_metadata.py && python3 phase2_blur.py && python3 phase3_batch.py && python3 phase4_passport.py && python3 phase5_signature.py && python3 phase5_watermark.py && python3 phase5_enhance.py && python3 phase5_background.py && python3 phase6_heic.py && python3 phase7_print.py && python3 phase8_reliability.py && python3 phase9_ui.py)"
+  },
+  "devDependencies": {
+    "vite": "^8.3.3"
+  },
+  "dependencies": {
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/jetbrains-mono": "^5.3.0",
+    "libheif-js": "^1.19.8"
+  }
+}
