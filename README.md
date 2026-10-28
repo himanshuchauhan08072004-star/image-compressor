@@ -1,5 +1,7 @@
 # Shrinkit
 
+## LIVE : https://image-compressor-seven-theta.vercel.app/
+
 Make a photo fit the limit. Image tools that run entirely in your browser: nothing is uploaded, nothing is stored.
 
 Today: compress JPG / PNG / WEBP with a live before/after preview.
@@ -60,4 +62,4 @@ This project was built as part of a developer trial task for Digital Heroes ([di
 
 ## Author
 
-Himanshu Chauhan — himanshuchauhan08072004@gmail.com
+# Himanshu Chauhan — himanshuchauhan08072004@gmail.com
